@@ -1,0 +1,32 @@
+// Core variables
+$primary: #1a237e;
+$secondary: #4caf50;
+$dark: #0a1142;
+$light: #f8f9fa;
+
+// Theme mixins
+@mixin dark-mode {
+    background-color: $dark;
+    color: white;
+}
+
+// Component modules
+@import 'components/navigation';
+@import 'components/forms';
+@import 'components/charts';
+@import 'components/tables';
+
+// Layout modules
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+
+// Pages
+@import 'pages/dashboard';
+@import 'pages/markets';
+@import 'pages/account';
+
+// Responsive breakpoints
+@import 'responsive/mobile';
+@import 'responsive/tablet';
+@import 'responsive/desktop';
