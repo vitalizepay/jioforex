@@ -534,6 +534,80 @@
             transform: translateY(-2px);
         }
         
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
+            background: #f9f9f9;
+        }
+        
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-details {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .contact-item {
+            display: flex;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(76, 175, 80, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--secondary);
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-text {
+            flex: 1;
+        }
+        
+        .contact-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+            color: var(--primary);
+        }
+        
+        .contact-map {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .contact-map iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 300px;
+            border: none;
+        }
+        
         /* ===== FOOTER ===== */
         footer {
             background: #0a1142;
@@ -615,6 +689,19 @@
             border-top: 1px solid rgba(255,255,255,0.1);
             color: #bbb;
             font-size: 0.9rem;
+        }
+        
+        .learning-note {
+            background: rgba(255,255,255,0.05);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+        
+        .learning-note strong {
+            color: var(--secondary);
         }
         
         /* ===== LIVE CHAT ===== */
@@ -741,6 +828,10 @@
             .signup-content, .signup-form {
                 width: 100%;
             }
+            
+            .contact-container {
+                flex-direction: column;
+            }
         }
         
         @media (max-width: 576px) {
@@ -774,7 +865,6 @@
                 <li><a href="#platforms">Platforms</a></li>
                 <li><a href="#accounts">Accounts</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             
@@ -987,60 +1077,51 @@
         </div>
     </section>
 
-    <!-- Features -->
-    <section class="section">
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
         <div class="section-title">
-            <h2>Why Choose JioForex?</h2>
-            <p>We provide everything you need for successful trading</p>
+            <h2>Contact Us</h2>
+            <p>Reach out to our support team for any assistance</p>
         </div>
         
-        <div class="features">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-shield-alt"></i>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Our Location</h4>
+                            <p>Tamilnadu, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone Number</h4>
+                            <p>8080055656</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email Address</h4>
+                            <p>support@jioforex.com</p>
+                        </div>
+                    </div>
                 </div>
-                <h3>Regulated & Secure</h3>
-                <p>Your funds are held in segregated accounts at top-tier banks for maximum security.</p>
             </div>
             
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-bolt"></i>
-                </div>
-                <h3>Fast Execution</h3>
-                <p>99.7% of orders executed in less than 50ms with no requotes.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-percentage"></i>
-                </div>
-                <h3>Tight Spreads</h3>
-                <p>Competitive spreads starting from 0.0 pips on major currency pairs.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <h3>Education Center</h3>
-                <p>Free webinars, video tutorials and market analysis for all skill levels.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-headset"></i>
-                </div>
-                <h3>24/5 Support</h3>
-                <p>Multilingual customer support available whenever markets are open.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <h3>Mobile Trading</h3>
-                <p>Trade on the go with our award-winning mobile apps for iOS and Android.</p>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125320.05630498888!2d78.082482!3d11.664325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1ccf2c2d249%3A0xcdee88e4737c3b8!2sTamil%20Nadu!5e0!3m2!1sen!2sin!4v1718000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -1147,16 +1228,60 @@
             </div>
             
             <div class="footer-col">
-                <h3>Company</h3>
+                <h3>Contact</h3>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Regulation</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Careers</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Tamilnadu, India</li>
+                    <li><i class="fas fa-phone-alt"></i> 8080055656</li>
+                    <li><i class="fas fa-envelope"></i> support@jioforex.com</li>
                 </ul>
             </div>
         </div>
         
         <div class="copyright">
             <p>© 2023 JioForex. All rights reserved.</p>
-            <p style="margin-top: 0.5rem;">Risk Warning: Trading Forex and CFDs carries a high level of risk and may not be suitable for all
+            <p style="margin-top: 0.5rem;">Risk Warning: Trading Forex and CFDs carries a high level of risk and may not be suitable for all investors.</p>
+            <div class="learning-note">
+                <p><strong>LEARNING PRO STRATEGIES IN OPTIONS TRADING (NIFTY AND BANKNIFTY). ONLY LEARNING WEBSITE</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat -->
+    <div class="live-chat">
+        <button class="chat-toggle">
+            <i class="fas fa-comment-alt"></i>
+        </button>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Chat Toggle
+        const chatToggle = document.querySelector('.chat-toggle');
+        const chatWindow = document.querySelector('.chat-window');
+        
+        chatToggle.addEventListener('click', () => {
+            if(chatWindow.style.display === 'block') {
+                chatWindow.style.display = 'none';
+            } else {
+                chatWindow.style.display = 'block';
+            }
+        });
+        
+        // Demo Form Submission
+        const demoForm = document.getElementById('demoAccountForm');
+        
+        demoForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you! Your demo account request has been received. We will contact you shortly.');
+            demoForm.reset();
+        });
+    </script>
+</body>
+</html>
