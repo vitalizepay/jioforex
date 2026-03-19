@@ -6,101 +6,102 @@
     <title>JioForex - Premium Forex Trading</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- KEEPING ALL YOUR ORIGINAL CSS EXACTLY SAME -->
-    <!-- (No changes here) -->
-
     <style>
-    /* --- YOUR FULL CSS (UNCHANGED) --- */
-    /* I did not modify anything in your styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f8f9fa;
+        }
+
+        header {
+            background: #1a237e;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3') center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #4caf50;
+            color: white;
+        }
+
+        .btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .song-box {
+            margin-top: 30px;
+        }
     </style>
 </head>
 
 <body>
 
-<!-- HEADER (UNCHANGED) -->
 <header>
-    <div class="header-container">
-        <div class="logo">
-            <i class="fas fa-chart-line"></i>
-            <span>Jio</span>Forex
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="#trading">Trading</a></li>
-            <li><a href="#platforms">Platforms</a></li>
-            <li><a href="#accounts">Accounts</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <div class="auth-buttons">
-            <button class="btn login-btn">Login</button>
-            <button class="btn register-btn">Register</button>
-        </div>
-
-        <div class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-    </div>
+    <div class="logo">JioForex</div>
 </header>
 
-<!-- HERO SECTION (ONLY CHANGE HERE) -->
+<!-- HERO -->
 <section class="hero">
-    <div class="hero-content">
-        <h1>Trade Global Markets with <span>JioForex</span></h1>
-        <p>Ultra-low spreads from 0.0 pips | Leverage up to 1:500 | Regulated Broker</p>
+    <h1>Trade Global Markets with <span style="color:#4caf50;">JioForex</span></h1>
+    <p>Ultra-low spreads | Fast execution | Trusted platform</p>
 
-        <div class="cta-buttons">
-            <a href="#register" class="btn btn-primary">Open Live Account</a>
-            <a href="#demo" class="btn btn-secondary">Try Free Demo</a>
-        </div>
+    <div>
+        <a href="#" class="btn btn-primary">Open Account</a>
+        <a href="#" class="btn btn-secondary">Demo</a>
+    </div>
 
-        <!-- 🎵 SONG SECTION (NEW) -->
-        <div style="margin-top: 2rem;">
-            <p style="margin-bottom: 10px; font-weight: 600;">
-                🎧 Welcome Song:
-                <a href="https://raw.githubusercontent.com/vitalizepay/jioforex/main/welcomeDrNirmala.mp3" target="_blank" style="color:#4caf50;">
-                    Play / Download
-                </a>
-            </p>
+    <!-- 🎵 SONG SECTION -->
+    <div class="song-box">
 
-            <audio controls style="width:100%; max-width:400px;">
-                <source src="https://raw.githubusercontent.com/vitalizepay/jioforex/main/welcomeDrNirmala.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-        <!-- END SONG -->
+        <p style="font-weight:bold;">🎧 Welcome Song</p>
+
+        <!-- DOWNLOAD BUTTON -->
+        <a href="https://vitalizepay.github.io/jioforex/welcomeDrNirmala.mp3"
+           download="welcomeDrNirmala.mp3"
+           class="btn btn-primary">
+           ⬇ Download Song
+        </a>
+
+        <br><br>
+
+        <!-- AUDIO PLAYER -->
+        <audio controls>
+            <source src="https://vitalizepay.github.io/jioforex/welcomeDrNirmala.mp3" type="audio/mpeg">
+        </audio>
 
     </div>
+
 </section>
 
-<!-- REST OF YOUR WEBSITE -->
-<!-- (UNCHANGED – COPY YOUR EXISTING CONTENT BELOW AS IS) -->
-
-<!-- Example continuation -->
-<section class="section">
-    <div class="section-title">
-        <h2>Trade 200+ Instruments</h2>
-        <p>Access global markets across multiple asset classes</p>
-    </div>
-</section>
-
-<!-- FOOTER (UNCHANGED) -->
-<footer>
-    <div class="copyright">
-        <p>© 2023 JioForex. All rights reserved.</p>
-    </div>
+<!-- FOOTER -->
+<footer style="text-align:center; padding:20px; background:#0a1142; color:white;">
+    © 2023 JioForex
 </footer>
-
-<!-- JS (UNCHANGED) -->
-<script>
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-const navLinks = document.querySelector('.nav-links');
-
-mobileMenuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-</script>
 
 </body>
 </html>
